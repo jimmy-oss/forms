@@ -1,21 +1,15 @@
-.green-background {
+ #hello {
   background-color: green;
 }
 
-.yellow-background {
+#goodbye {
   background-color: yellow;
+
 }
 
-.red-background {
+#stop {
   background-color: red;
 }
-.white-mode{
-  background-color: white;
-  color: black;
-  
-}
-.dark-mode {
-  background-color: black;
-  color: white;
-}
+ 
+ 
  

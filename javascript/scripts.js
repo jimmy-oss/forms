@@ -1,24 +1,22 @@
 $(document).ready(function(){
-    $("button#green").click(function(){
-         $("body").removeClass();
-         $("body").addClass("green-background");
+    $("button#hello").click(function(){
+         $(".he").prepend("<li>Hello!</li>");
+         $(".webpage").append("<li>Why hello there!</li>");
+         
+         
+    });
+          
+        $("button#goodbye").click(function(){
+        $(".bye").prepend("<li>Goodbye!</li>");
+        $(".see").append("<li>Goodbye, dear user!</li>");  
         
     });
-    $("button#yellow").click(function(){
-        $("body").removeClass();
-        $("body").addClass("yellow-background");
-    });
-    $("button#red").click(function(){
-        $("body").removeClass();
-        $("body").addClass("red-background");
-    });
-    $("button#white").click(function(){
-        $("body").removeClass();
-        $("body").addClass("white-mode");
+
+    $("button#stop").click(function(){
+        $(".top").prepend("<li>stop copying me!</li>");
+        $(".tops").append("<li>pardon me.I meant no offence.</li>");
+         
+        
     });
 
-    $("button#black").click(function(){
-        $("body").removeClass();
-        $("body").addClass("dark-mode");
-    });
 });
