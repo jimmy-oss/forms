@@ -1,22 +1,20 @@
-$(document).ready(function(){
-    $("button#hello").click(function(){
-         $(".he").prepend("<li>Hello!</li>");
-         $(".webpage").append("<li>Why hello there!</li>");
-         
-         
-    });
-          
-        $("button#goodbye").click(function(){
-        $(".bye").prepend("<li>Goodbye!</li>");
-        $(".see").append("<li>Goodbye, dear user!</li>");  
-        
-    });
+$(document).ready(function() {
+    $("#blanks form").submit(function(event) {
+        var person1Input = $("input#person1").val();
+        var person2Input = $("input#person2").val();
+        var animalInput = $("input#animal").val();
+        var exclamationInput = $("input#exclamation").val();
+        var verbInput = $("input#verb").val();
+        var nounInput = $("input#noun").val();
+        $(".person1").text(person1Input);
+        $(".person2").text(person2Input);
+        $(".animal").text(animalInput);
+        $(".exclamation").text(exclamationInput);
+        $(".verb").text(verbInput);
+        $(".noun").text(nounInput);
 
-    $("button#stop").click(function(){
-        $(".top").prepend("<li>stop copying me!</li>");
-        $(".tops").append("<li>pardon me.I meant no offence.</li>");
-         
-        
-    });
+        $("#story").show();
 
+        event.preventDefault();
+    });
 });

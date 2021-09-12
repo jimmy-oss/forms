@@ -1,15 +1,19 @@
- #hello {
-  background-color: green;
+#story {
+  display: none;
+  background-color: aqua;
+  border-radius: 10rem;
+  text-align: center;
 }
-
-#goodbye {
-  background-color: yellow;
-
-}
-
-#stop {
-  background-color: red;
-}
- 
- 
- 
+.container{
+  background-image: url("../images/\ story.png");
+  min-width: 1000px;
+  min-height: 1000px;
+   /* Center and scale the image nicely */
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: fantasy;
+   font-size: 20px;
+  
+   }
+  
